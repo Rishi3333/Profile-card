@@ -12,6 +12,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    background-image: url(linkbg.png);
+    backdrop-filter: blur(4px);
 }
 
 .profile-card {
