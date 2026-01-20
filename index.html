@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    
+    
+    <div class="profile-card">
+        
+        
+        <div class="card-header">
+           
+            <div class="profile-pic">
+                <!-- <img class="my-image" src="TerminalMontage Link pfp.png" alt="pfp"> -->
+                 
+            </div>
+        </div>
+        
+        
+        <div class="card-body">
+            
+            <h1 class="name">Rishinandan</h1>
+            <p class="username">@rishinandan ™</p>
+            
+            
+            <p class="bio">
+                🛡️ Cybersecurity Student | 💻 Learning Web dev | 
+                🍜 Food Lover | 🎮 Gamer
+            </p>
+            
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">1.1K</div>
+                    <div class="stat-label">Followers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">242</div>
+                    <div class="stat-label">Following</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">69</div>
+                    <div class="stat-label">Posts</div>
+                </div>
+                
+            </div>
+            
+            
+            <div class="skills">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">Java</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">Python</span>
+            </div>
+            
+            
+            <div class="buttons">
+                <button class="btn btn-primary" id="followBtn">Follow</button>
+                <button class="btn btn-secondary" id="messageBtn"><a target="_blank" href="https://yahoo.com">Message</a></button>
+            </div>
+        </div>
+    </div>
+    
+   
+    <script>
+        
+        const followBtn = document.getElementById('followBtn');
+        const messageBtn = document.getElementById('messageBtn');
+        
+        followBtn.addEventListener('click', function() {
+            if (followBtn.textContent === 'Follow') {
+                followBtn.textContent = 'Following ✓';
+                followBtn.style.background = 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)';
+            } else {
+                followBtn.textContent = 'Follow';
+                followBtn.style.background = 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)';
+            }
+        });
+        
+        messageBtn.addEventListener('click', function() {
+            if (messageBtn.textContent === 'Message') {
+                messageBtn.textContent = 'Sent 📨';
+                messageBtn.style.background = 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)';
+                messageBtn.style.color = 'white';
+                messageBtn.style.border = 'none';
+            } else {
+                messageBtn.textContent = 'Message';
+                messageBtn.style.background = 'white';
+                messageBtn.style.color = '#667eea';
+                messageBtn.style.border = '2px solid #667eea';
+            }
+        });
+        
+        
+    </script>
+    
+</body>
+</html>
